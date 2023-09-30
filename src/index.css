@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply font-sans
+}
+.search-topics{
+    @apply flex md:gap-2 md:items-center flex-wrap gap-sm md:justify-center
+}
+.search-topics>span{
+    @apply hover:bg-offsetPlus hover:text-textMain rounded-[4px]
+    p-0.5 px-2 text-xs 
+    text-textMain md:text-extradark-gray
+    font-medium
+    bg-offsetPlus md:bg-background
+}
+.homepage{
+    @apply flex justify-center items-center flex-col h-full
+}
+.try-asking-container{
+    @apply md:text-center flex items-center gap-x-xs md:justify-center mb-sm text-xs text-textMain font-medium  mt-lg
+}
+.custom-order-list li{
+    margin: 0.5em 0;
+    padding-left: 0.375em;
+}
+.custom-order-list strong{
+    font-weight: 600!important;
+    color: #13343b!important;
+}
+.para-action-btn>.btn-icon{
+@apply h-8 w-8 hover:bg-offsetPlus flex justify-center items-center rounded hover:text-textMain
+}
+.para-action-btn>button{
+    @apply  hover:bg-offsetPlus flex justify-center items-center rounded hover:text-textMain
+    }
+
+.main-grid>div{
+    cursor: pointer;
+}
